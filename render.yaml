@@ -1,0 +1,14 @@
+# Blueprint do Render.com — https://render.com/docs/blueprint-spec
+# Como usar: no dashboard do Render, clique em "New" > "Blueprint" e aponte
+# para o repositório Git que contém este arquivo na raiz.
+services:
+  - type: web
+    name: ecos-do-subsolo
+    runtime: python
+    plan: free
+    buildCommand: pip install -r server/requirements.txt
+    startCommand: gunicorn --chdir server app:app --bind 0.0.0.0:$PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
