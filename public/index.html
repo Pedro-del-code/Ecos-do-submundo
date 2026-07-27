@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Ecos do Subsolo</title>
+<meta name="description" content="Um RPG 2D inspirado em Undertale: exploração, diálogos e combate de esquiva de projéteis.">
+<meta name="theme-color" content="#05050a">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+
+    <div id="touch-controls" class="touch-controls">
+      <div class="dpad">
+        <button id="dpad-up" class="dpad-btn up" aria-label="Cima">▲</button>
+        <button id="dpad-left" class="dpad-btn left" aria-label="Esquerda">◀</button>
+        <button id="dpad-right" class="dpad-btn right" aria-label="Direita">▶</button>
+        <button id="dpad-down" class="dpad-btn down" aria-label="Baixo">▼</button>
+      </div>
+      <div class="action-buttons">
+        <button id="btn-cancel" class="action-btn cancel" aria-label="Cancelar">X</button>
+        <button id="btn-confirm" class="action-btn confirm" aria-label="Confirmar">Z</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
