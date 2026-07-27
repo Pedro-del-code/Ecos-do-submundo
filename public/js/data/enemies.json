@@ -1,0 +1,12 @@
+{
+  "bolha": {
+    "name": "Bolha",
+    "maxHp": 35,
+    "atk": 3,
+    "attackPattern": "wave",
+    "acts": [
+      { "id": "examinar", "label": "Examinar", "text": "BOLHA - ATQ 3 DEF 1. Parece só querer atenção." },
+      { "id": "talk", "label": "Conversar", "text": "Você conversa com Bolha sobre o clima da caverna. Ela vibra, feliz." }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "starting_room": {
+    "width": 12,
+    "height": 9,
+    "layout": [
+      "############",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#####..#####"
+    ],
+    "playerStart": { "x": 5, "y": 4 },
+    "npcs": [
+      {
+        "x": 8,
+        "y": 4,
+        "lines": [
+          "Lampião: Olá, viajante. Não se via uma alma nova por aqui há tempos.",
+          "Lampião: Este subsolo guarda ecos de quem passou antes de você.",
+          "Lampião: Siga em frente, mas escute antes de lutar. Nem tudo que reluz é inimigo."
+        ]
+      }
+    ],
+    "encounters": [],
+    "doors": [
+      { "x": 5, "y": 8, "target": "corredor", "entryX": 5, "entryY": 1 },
+      { "x": 6, "y": 8, "target": "corredor", "entryX": 5, "entryY": 1 }
+    ]
+  },
+  "corredor": {
+    "width": 12,
+    "height": 9,
+    "layout": [
+      "#####..#####",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "#..........#",
+      "############"
+    ],
+    "playerStart": { "x": 5, "y": 1 },
+    "npcs": [],
+    "encounters": [
+      { "x": 5, "y": 4, "enemy": "bolha" }
+    ],
+    "doors": [
+      { "x": 5, "y": 0, "target": "starting_room", "entryX": 5, "entryY": 7 },
+      { "x": 6, "y": 0, "target": "starting_room", "entryX": 5, "entryY": 7 }
+    ]
+  }
+}
